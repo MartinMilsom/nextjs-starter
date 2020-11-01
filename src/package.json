@@ -1,0 +1,43 @@
+{
+  "name": "sort-my-life",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "yarn lint&&yarn test&&next build",
+    "start": "next build&&next start",
+    "test": "jest --runInBand --no-cache --config jest.config.js",
+    "tdd": "yarn test --watch",
+    "lint": "eslint pages/** --ignore-pattern *.css"
+  },
+  "dependencies": {
+    "mongodb": "^3.6.2",
+    "next": "9.5.5",
+    "next-auth": "^3.1.0",
+    "react": "17.0.0",
+    "react-dom": "17.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^7.26.3",
+    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/react": "^11.1.0",
+    "@types/node": "^14.14.2",
+    "@types/react": "^16.9.53",
+    "@typescript-eslint/eslint-plugin": "^4.5.0",
+    "@typescript-eslint/parser": "^4.5.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.1",
+    "eslint": "^7.12.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.0",
+    "eslint-plugin-json": "^2.1.2",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.1",
+    "jest-dom": "^4.0.0",
+    "typescript": "^4.0.3"
+  }
+}
